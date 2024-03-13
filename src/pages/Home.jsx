@@ -104,7 +104,7 @@ const Home = () => {
 					<div className="overlay-text">
 						<div className="show text-white">
 							<p className="text-lg md:big">
-								Not sure what fits your firms needs?
+								Not sure what fits your farms needs?
 								<br /> Join us and get the best businees for your self
 							</p>
 							<p className="text-sm md:small">
