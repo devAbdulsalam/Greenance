@@ -189,7 +189,6 @@ const Home = () => {
 				</div>
 			</section>
 			<section id="team" className="flex flex-col justify-center">
-
 				<Teams />
 			</section>
 			<Footer />

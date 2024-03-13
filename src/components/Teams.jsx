@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { teams } from '../data';
+import { teams } from '../Data';
 import Team from './Team';
 // Import Swiper styles
 import { register } from 'swiper/element/bundle';
