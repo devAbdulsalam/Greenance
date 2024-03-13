@@ -114,13 +114,13 @@ const Home = () => {
 							</p>
 							<div className="mt-10 gap-5 flex">
 								<Link
-									to="signup.html"
+									to="#"
 									className="rounded-md px-4 py-3 bg-primary hover:bg-primary-light text-white text-lg font-semibold"
 								>
 									Register
 								</Link>
 								<Link
-									to="signup.html"
+									to="#"
 									className="rounded-md px-8 py-3 bg-primary-dark hover:bg-primary-light text-white text-lg font-semibold"
 								>
 									Login
@@ -188,9 +188,7 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
-			<section id="team" className="flex flex-col justify-center">
-				<Teams />
-			</section>
+			<Teams />
 			<Footer />
 		</>
 	);
