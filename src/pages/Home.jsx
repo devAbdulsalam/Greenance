@@ -24,25 +24,25 @@ const Home = () => {
 					<nav className="flex justify-center items-center w-full fixed top-0 left-0 z-10 bg-primary">
 						<a
 							href="#"
-							className="p-2 md:p-4 text-lg text-white hover:text-primary-light font-semibold"
+							className="p-2 md:p-4 text-sm md:text-lg text-white hover:text-primary-light font-semibold"
 						>
 							Home
 						</a>
 						<a
 							href="#about"
-							className="p-2 md:p-4 text-lg text-white hover:text-primary-light font-semibold"
+							className="p-2 md:p-4 text-sm md:text-lg text-white hover:text-primary-light font-semibold"
 						>
 							About Us
 						</a>
 						<a
 							href="#product"
-							className="p-2 md:p-4 text-lg text-white hover:text-primary-light font-semibold"
+							className="p-2 md:p-4 text-sm md:text-lg text-white hover:text-primary-light font-semibold"
 						>
 							Products
 						</a>
 						<a
 							href="#team"
-							className="p-2 md:p-4 text-lg text-white hover:text-primary-light font-semibold"
+							className="p-2 md:p-4 text-sm md:text-lg text-white hover:text-primary-light font-semibold"
 						>
 							Team
 						</a>
