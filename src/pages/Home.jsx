@@ -172,7 +172,7 @@ const Home = () => {
 								}}
 								viewport={{ once: false, amount: 0.5 }}
 								key={idx}
-								className="text-center rounded-md shadow-md p-2 hover:bg-gray-100 info-box"
+								className="text-center rounded-md shadow-md p-2 pb-4 hover:bg-gray-100 info-box"
 							>
 								<img
 									src={item.image}

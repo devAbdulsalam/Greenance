@@ -4,21 +4,18 @@ const Footer = () => {
 			<div className="border-t border-slate-200 py-4 text-gray-600 mt-10">
 				<div className="container px-4 mx-auto">
 					<div className="-mx-4 flex flex-wrap justify-between">
-						<div className="px-4 my-4 w-full xl:w-1/5">
+						<div className="px-4 my-4 w-auto">
 							<a href="/" className="block w-56">
-								<h2 className="inline-block text-2xl md:text-3xl font-semibold md:font-bold pb-4 mb-4 border-b-4 text-primary border-primary-dark">
+								<h2 className="inline-block text-xl md:text-2xl font-semibold md:font-bold pb-4 mb-4 border-b-4 text-primary border-primary-dark">
 									Greenance
 								</h2>
 							</a>
-							<p className="text-justify">
-								Greenance prevent farm loss by unlocking investment funds.
-							</p>
 						</div>
 
 						<div className="px-4 my-4 w-full sm:w-auto">
 							<div>
-								<h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 text-primary border-primary-dark">
-									Greenance
+								<h2 className="inline-block text-xl pb-4 mb-2 border-b-4 text-primary border-primary-dark">
+									About us
 								</h2>
 							</div>
 							<ul className="leading-8">
@@ -37,50 +34,11 @@ const Footer = () => {
 										Privacy Policy
 									</a>
 								</li>
-								<li>
-									<a href="#" className="hover:text-primary">
-										Contact Us
-									</a>
-								</li>
 							</ul>
 						</div>
 						<div className="px-4 my-4 w-full sm:w-auto">
 							<div>
-								<h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 text-primary border-primary-dark">
-									Blog
-								</h2>
-							</div>
-							<ul className="leading-8">
-								<li>
-									<a href="#" className="hover:text-primary">
-										Getting Started With HTML and CSS
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:text-primary">
-										What Is Flex And When to Use It?
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:text-primary">
-										How TailwindCSS Can Help Your Productivity?
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:text-primary">
-										5 Tips to Make Responsive Website
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:text-primary">
-										See More
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div className="px-4 my-4 w-full sm:w-auto xl:w-1/5">
-							<div>
-								<h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 text-primary border-primary-dark">
+								<h2 className="inline-block text-xl pb-4 mb-2 border-b-4 text-primary border-primary-dark">
 									Connect With Us
 								</h2>
 							</div>
