@@ -10,7 +10,7 @@ const Team = ({ name, role, image, text, link }) => {
 						<a
 							href={link || '#'}
 							target="blank"
-							className=" mt-2 text-2xl font-bold text-center block"
+							className=" mt-2 text-xl font-bold text-center block"
 						>
 							{name}
 						</a>
