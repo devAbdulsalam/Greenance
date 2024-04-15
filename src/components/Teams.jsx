@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { teams } from '../Data';
 import Team from './Team';
 // Import Swiper styles
@@ -33,7 +32,7 @@ const Teams = () => {
 	}, []);
 	return (
 		<section id="team">
-			<div className="container mx-auto">
+			<div className="container mx-auto my-10">
 				<div className="text-center">
 					<motion.h2
 						initial={{ opacity: 0, y: 50 }}

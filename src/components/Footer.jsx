@@ -1,20 +1,17 @@
 const Footer = () => {
 	return (
 		<footer id="contact">
-			<div className="bg-slate-50 py-4 text-gray-400">
+			<div className="border-t border-slate-200 py-4 text-gray-600 mt-10">
 				<div className="container px-4 mx-auto">
 					<div className="-mx-4 flex flex-wrap justify-between">
 						<div className="px-4 my-4 w-full xl:w-1/5">
-							<a href="/" className="block w-56 mb-10">
+							<a href="/" className="block w-56">
 								<h2 className="inline-block text-2xl md:text-3xl font-semibold md:font-bold pb-4 mb-4 border-b-4 text-primary border-primary-dark">
 									Greenance
 								</h2>
 							</a>
 							<p className="text-justify">
-								Tailwindow is a collection of UI Components created using
-								Tailwind CSS Framework. The UI Components gives you all of the
-								building blocks you need to build any designs without any
-								annoying opinionated styles you have to fight to override.
+								Greenance prevent farm loss by unlocking investment funds.
 							</p>
 						</div>
 

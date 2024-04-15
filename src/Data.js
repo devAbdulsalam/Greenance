@@ -1,9 +1,16 @@
 import image1 from './assets/image1.jpg';
-import image2 from './assets/image2.jpg';
-import image3 from './assets/image3.jpg';
-import image4 from './assets/image4.jpg';
-import image5 from './assets/image5.jpg';
-import image6 from './assets/image6.jpg';
+// import image2 from './assets/image3.jpg';
+import investimg from './assets/money.jpg';
+import image3 from './assets/agric-technology.jpg';
+// import image5 from './assets/image5.jpg';
+// import image6 from './assets/image6.jpg';
+import sdg1 from './assets/sdgIcons/E-WEB-Goal-01.png';
+import sdg2 from './assets/sdgIcons/E-WEB-Goal-02.png';
+import sdg8 from './assets/sdgIcons/E-WEB-Goal-08.png';
+import sdg9 from './assets/sdgIcons/E-WEB-Goal-09.png';
+import sdg13 from './assets/sdgIcons/E-WEB-Goal-13.png';
+import sdg17 from './assets/sdgIcons/E-WEB-Goal-17.png';
+
 import abdulsalam from './assets/abdulsalam.jpg';
 import josh from './assets/josh.png';
 import syd from './assets/syd.jpg';
@@ -40,34 +47,51 @@ export const teams = [
 ];
 export const moreInfo = [
 	{
-		image: image1,
-		title: 'First title',
-		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quasi?',
+		image: investimg,
+		title: 'Investment funds',
+		text: 'Greenance leverage web3 technology to provides farmers with information and insights to investment funds.',
 	},
 	{
-		image: image2,
-		title: 'second title',
-		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quasi?',
+		image: image1,
+		title: 'AI analytics',
+		text: 'Enpowered farmenrs with proactive prediction, risk alert and reporting for farmers and agric project using ai',
 	},
 	{
 		image: image3,
-		title: 'third title',
-		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quasi?',
+		title: 'Transparent',
+		text: 'Leverage on web3 technology to ensure credibility and information transparency',
+	},
+];
+export const sdgGoals = [
+	{
+		image: sdg1,
+		title: 'SGD 1',
+		text: 'NO POVERTY',
 	},
 	{
-		image: image4,
-		title: 'Fourth title',
-		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quasi?',
+		image: sdg2,
+		title: 'SGD 2',
+		text: 'ZERO HUNGER',
 	},
 	{
-		image: image5,
-		title: 'fifth title',
-		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quasi?',
+		image: sdg8,
+		title: 'SDG 8',
+		text: 'DECENT WORK & ECONOMIC GROWTH',
 	},
 	{
-		image: image6,
-		title: 'sixth title',
-		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quasi?',
+		image: sdg9,
+		title: 'SDG 9',
+		text: 'INDUSTRY, INNOVATION & INFRASTRUCTURE',
+	},
+	{
+		image: sdg13,
+		title: 'SGD 13',
+		text: 'CLIMATE ACTION',
+	},
+	{
+		image: sdg17,
+		title: 'SDG 17',
+		text: 'PARTNERSHIPS FOR THE GOALS',
 	},
 ];
 

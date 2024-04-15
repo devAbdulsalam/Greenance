@@ -3,7 +3,7 @@ import { useContext, useEffect } from 'react';
 import AuthContext from '../context/authContext';
 import { Link, useNavigate } from 'react-router-dom';
 import image6 from './../assets/image1.jpg';
-import { moreInfo } from './../Data.js';
+import { moreInfo, sdgGoals } from './../Data.js';
 import Footer from './../components/Footer';
 import Teams from './../components/Teams';
 import { motion } from 'framer-motion';
@@ -51,18 +51,19 @@ const Home = () => {
 					<div className="flex justify-center h-full items-center">
 						<div className="head  mx-auto text-white text-center">
 							<h1 className="text-4xl md:text-6xl head-text mt-12 font-semibold">
-								Greenance is the <br className="md:hidden" /> new Agriculture
+								Greenance provide farmers with <br className="md:hidden" />
+								Information to investment funds
 							</h1>
 							<p className="head-text mt-6 text-lg md:text-xl">
-								We help to grow smart and to collect smart contract
+								Greenance prevent farm loss by unlocking investment funds.
 							</p>
 							<div className="mt-10">
-								<Link
-									to="#about"
+								<a
+									href="#about"
 									className="info-btn text-lg font-semibold mt-10 p-3 px-5 rounded-md bg-primary hover:bg-primary-dark "
 								>
 									More Info
-								</Link>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -72,19 +73,19 @@ const Home = () => {
 					<div className="info bg-primary flex -mt-14 rounded-md ">
 						<div className="text-white text-center text-xl  md:text-[50px] md:pr-5 border-r-2 border-r-white m-[10px] md:m-[20px]">
 							<i className="fa fa-leaf"></i>
-							<p className="text-lg md:text-[25px]">Fresh</p>
+							<p className="text-lg md:text-[25px]">Information</p>
 						</div>
 						<div className="text-white text-center text-xl md:text-[50px] md:pr-5 border-r-2 border-r-white m-[10px] md:m-[20px]">
-							<i className="fa fa-car"></i>
-							<p className="text-lg md:text-[25px]">Easy</p>
+							<i className="fa fa-eye"></i>
+							<p className="text-lg md:text-[25px]">Insight</p>
 						</div>
 						<div className="text-white text-center text-xl md:text-[50px] md:pr-5 border-r-2 border-r-white m-[10px] md:m-[20px]">
 							<i className="fa fa-road"></i>
-							<p className="text-lg md:text-[25px]">Safe</p>
+							<p className="text-lg md:text-[25px]">Investment</p>
 						</div>
 						<div className="text-white text-center text-xl md:text-[50px] md:pr-5 border-r-2 border-r-white m-[10px] md:m-[20px]">
 							<i className="fa fa-check"></i>
-							<p className="text-lg md:text-[25px]">Reliable</p>
+							<p className="text-lg md:text-[25px]">funds</p>
 						</div>
 					</div>
 				</div>
@@ -108,9 +109,9 @@ const Home = () => {
 								<br /> Join us and get the best businees for your self
 							</p>
 							<p className="text-sm md:small">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-								commodi culpa iure mollitia molestias natus itaque doloremque
-								voluptates distinctio rerum.
+								We provide climate intelligence to farmers and reliable
+								understanding and insight from farmers to grow farm, provide
+								farm information to agricultural investment funds
 							</p>
 							<div className="mt-10 gap-5 flex">
 								<Link
@@ -130,8 +131,8 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
-			<section id="product" className="py-20px w-full">
-				<div id="more-info" className="w-10/12 mx-auto">
+			<section id="product" className="py-20 px-2 w-full">
+				<div id="more-info" className="md:w-11/12 mx-auto">
 					<div className="text-center my-10">
 						<motion.h1
 							initial={{ opacity: 0, y: 50 }}
@@ -156,9 +157,8 @@ const Home = () => {
 							viewport={{ once: false, amount: 0.5 }}
 							className="mt-4 text-lg "
 						>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-							aliquid laborum qui necessitatibus eos odit? Vero at praesentium
-							aliquid enim.
+							Prevent farm loss by unlocckning access to intervention funds for
+							farmer
 						</motion.p>
 					</div>
 					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 ">
@@ -179,11 +179,57 @@ const Home = () => {
 									alt={item.title}
 									className="w-full object-center md:h-[70%]"
 								/>
-								<h3 className="text-lg md:text-xl font-semibold my-4">
+								<h3 className="text-lg font-semibold my-3">{item.title}</h3>
+								<p className="pb-4">{item.text}</p>
+							</motion.div>
+						))}
+					</div>
+				</div>
+			</section>
+			<section className="information bg-slate-50 pt-10 pb-16 flex justify-center items-center">
+				<div id="" className="md:w-10/12 mx-auto">
+					<div className="text-center mt-5 mb-10">
+						<motion.h1
+							initial={{ opacity: 0, y: 50 }}
+							whileInView={{
+								opacity: 1,
+								y: 0,
+								transition: { delay: 0.2, duration: 0.5 },
+							}}
+							viewport={{ once: false, amount: 0.5 }}
+							className="text-3xl font-semibold"
+						>
+							{' '}
+							Contribution To SDGs 2030
+						</motion.h1>
+						<motion.p
+							initial={{ opacity: 0, y: 50 }}
+							whileInView={{
+								opacity: 1,
+								y: 0,
+								transition: { delay: 0.4, duration: 0.5 },
+							}}
+							viewport={{ once: false, amount: 0.5 }}
+							className="mt-4 text-lg "
+						>
+							We are committed, and offer our contributions to the Sustainable
+							Development Goals.
+						</motion.p>
+					</div>
+					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-10">
+						{sdgGoals.map((item, idx) => (
+							<div key={idx} className="text-center">
+								<div>
+									<img
+										src={item.image}
+										alt={item.image}
+										className="h-[120px] mx-auto rounded-sm"
+									/>
+								</div>
+								<h3 className="text-lg md:text-xl font-semibold my-2">
 									{item.title}
 								</h3>
-								<p className="pb-2">{item.text}</p>
-							</motion.div>
+							</div>
 						))}
 					</div>
 				</div>
