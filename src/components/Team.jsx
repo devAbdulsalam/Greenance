@@ -32,7 +32,7 @@ const Team = ({ name, role, image, text, link }) => {
 					<a
 						href={link || '#'}
 						target="blank"
-						className=" mt-2 text-2xl font-bold"
+						className=" mt-2 text-lg font-bold"
 					>
 						{name}
 					</a>

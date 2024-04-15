@@ -83,7 +83,7 @@ const Home = () => {
 							<i className="fa fa-road"></i>
 							<p className="text-lg md:text-[25px]">Investment</p>
 						</div>
-						<div className="text-white text-center text-xl md:text-[50px] md:pr-5 border-r-2 border-r-white m-[10px] md:m-[20px]">
+						<div className="text-white text-center text-xl md:text-[50px] md:pr-5 m-[10px] md:m-[20px]">
 							<i className="fa fa-check"></i>
 							<p className="text-lg md:text-[25px]">funds</p>
 						</div>
