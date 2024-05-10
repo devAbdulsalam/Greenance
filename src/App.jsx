@@ -8,7 +8,11 @@ import Layout from './Layout';
 import Register from './pages/Register';
 import DashboardLayout from './pages/DashboardLayout';
 import Home from './pages/Home';
-
+import Dashboard from './pages/Dashboard';
+import Users from './pages/Users';
+import Chart from './pages/Chart';
+import Loans from './pages/Loans';
+import Loan from './pages/Loan';
 export default function App() {
 	return (
 		<Routes>
@@ -20,9 +24,13 @@ export default function App() {
 				<Route path="/" element={<Home />} />
 				<Route element={<ProtectedRoutes />}>
 					<Route exact path="/" element={<DashboardLayout />}>
-						<Route path="/dashboard" element={<Home />} />
+						<Route path="/dashboard" element={<Dashboard />} />
+						<Route path="/users" element={<Users />} />
+						<Route path="/Chart" element={<Chart />} />
 					</Route>
 				</Route>
+				<Route path="/loans" element={<Loans />} />
+				<Route path="/loans/:id" element={<Loan />}></Route>
 			</Route>
 			<Route path="*" element={<NotFound />} />
 		</Routes>

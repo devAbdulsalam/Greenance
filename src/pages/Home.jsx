@@ -46,21 +46,27 @@ const Home = () => {
 						>
 							Team
 						</a>
+						<Link
+							to="/loans"
+							className="p-2 md:p-4 text-sm md:text-lg text-white hover:text-primary-light font-semibold"
+						>
+							Loans
+						</Link>
 					</nav>
 
 					<div className="flex justify-center h-full items-center">
-						<div className="head  mx-auto text-white text-center">
-							<h1 className="text-4xl md:text-6xl head-text mt-12 font-semibold">
+						<div className="head  mx-auto  text-center">
+							<h1 className="text-4xl md:text-6xl text-white head-text mt-12 font-semibold">
 								Greenance provide farmers with <br className="md:hidden" />
 								Information to investment funds
 							</h1>
-							<p className="head-text mt-6 text-lg md:text-xl">
+							<p className="head-text mt-6 text-xl md:text-2xl text-white">
 								Greenance prevent farm loss by unlocking investment funds.
 							</p>
 							<div className="mt-10">
 								<a
 									href="#about"
-									className="info-btn text-lg font-semibold mt-10 p-3 px-5 rounded-md bg-primary hover:bg-primary-dark "
+									className="info-btn text-lg text-white font-semibold mt-10 p-3 px-5 rounded-md bg-primary hover:bg-primary-dark "
 								>
 									More Info
 								</a>
@@ -73,19 +79,19 @@ const Home = () => {
 					<div className="info bg-primary flex -mt-14 rounded-md ">
 						<div className="text-white text-center text-xl  md:text-[50px] md:pr-5 border-r-2 border-r-white m-[10px] md:m-[20px]">
 							<i className="fa fa-leaf"></i>
-							<p className="text-lg md:text-[25px]">Information</p>
+							<p className="text-lg md:text-[25px] text-white">Information</p>
 						</div>
 						<div className="text-white text-center text-xl md:text-[50px] md:pr-5 border-r-2 border-r-white m-[10px] md:m-[20px]">
 							<i className="fa fa-eye"></i>
-							<p className="text-lg md:text-[25px]">Insight</p>
+							<p className="text-lg md:text-[25px] text-white">Insight</p>
 						</div>
 						<div className="text-white text-center text-xl md:text-[50px] md:pr-5 border-r-2 border-r-white m-[10px] md:m-[20px]">
 							<i className="fa fa-road"></i>
-							<p className="text-lg md:text-[25px]">Investment</p>
+							<p className="text-lg md:text-[25px] text-white">Investment</p>
 						</div>
 						<div className="text-white text-center text-xl md:text-[50px] md:pr-5 m-[10px] md:m-[20px]">
 							<i className="fa fa-check"></i>
-							<p className="text-lg md:text-[25px]">funds</p>
+							<p className="text-lg md:text-[25px] text-white">funds</p>
 						</div>
 					</div>
 				</div>
@@ -104,24 +110,24 @@ const Home = () => {
 					</div>
 					<div className="overlay-text">
 						<div className="show text-white">
-							<p className="text-lg md:big">
+							<p className="text-lg md:big text-white md:text-2xl">
 								Not sure what fits your farms needs?
 								<br /> Join us and get the best businees for your self
 							</p>
-							<p className="text-sm md:small">
+							<p className="text-sm md:small text-white md:text-2xl">
 								We provide climate intelligence to farmers and reliable
 								understanding and insight from farmers to grow farm, provide
 								farm information to agricultural investment funds
 							</p>
 							<div className="mt-10 gap-5 flex">
 								<Link
-									to="#"
+									to="/register"
 									className="rounded-md px-4 py-3 bg-primary hover:bg-primary-light text-white text-lg font-semibold"
 								>
 									Register
 								</Link>
 								<Link
-									to="#"
+									to="/login"
 									className="rounded-md px-8 py-3 bg-primary-dark hover:bg-primary-light text-white text-lg font-semibold"
 								>
 									Login
@@ -183,6 +189,14 @@ const Home = () => {
 								<p className="pb-4">{item.text}</p>
 							</motion.div>
 						))}
+					</div>
+					<div className="flex justify-center mt-10">
+						<Link
+							to="/loans"
+							className="bg-primary-light hover:bg-primary text-white px-4 py-3 rounded-lg"
+						>
+							See available loans
+						</Link>
 					</div>
 				</div>
 			</section>

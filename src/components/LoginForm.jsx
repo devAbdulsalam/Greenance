@@ -130,7 +130,7 @@ const LoginForm = ({ setLoading, loading }) => {
 						Don&apos;t have an account?{' '}
 						<Link
 							to={'/register'}
-							className="text-primary underline underline-primary underline-offset-2"
+							className="text-primary-light underline underline-primary underline-offset-2"
 						>
 							Register
 						</Link>
@@ -142,7 +142,7 @@ const LoginForm = ({ setLoading, loading }) => {
 				<div className="px-4 pb-2 pt-4">
 					<button
 						type="submit"
-						className="uppercase block w-full p-4 text-lg rounded-full bg-primary text-white hover:bg-primary-light focus:outline-none duration-75 transition-all cursor-pointer ease-in-out"
+						className="uppercase block w-full p-4 text-lg rounded-full bg-primary-light text-white hover:bg-primary focus:outline-none duration-75 transition-all cursor-pointer ease-in-out"
 					>
 						sign in
 					</button>

@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Logo from '../assets/logo.png';
 import { useEffect, useState } from 'react';
 const LeftImage = () => {
@@ -16,15 +16,15 @@ const LeftImage = () => {
 		<div className="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center bgImage">
 			<div className="absolute bg-green-500/30 opacity-60 inset-0 z-0"></div>
 			<div className="w-full px-24 z-10 text-center text-white">
-				<div className="flex items-center justify-center w-full">
+				<Link to="/" className="flex items-center justify-center w-full">
 					<img className="w-32" src={Logo} alt="" />
-				</div>
+				</Link>
 				<h1 className="text-white text-5xl tracking-wide  font-bold my-6">
 					WELCOME BACK
 				</h1>
-				<p className="text-2xl my-4">
+				<p className="text-2xl my-4 text-white">
 					Remember you are not alone, <br />
-					we are in it together
+					we got you cover
 				</p>
 				<button
 					onClick={() => navigate(`/${page == 'login' ? 'register' : 'login'}`)}

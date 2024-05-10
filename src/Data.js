@@ -96,7 +96,7 @@ export const sdgGoals = [
 ];
 
 export const chartData = {
-	labels: ['metal', 'solid', 'organic', 'oepe', 'opp', 'ouyioi'],
+	labels: ['Food', 'Processing', 'Organic', 'Manufacturing'],
 	datasets: [
 		{
 			label: 'food',
@@ -104,8 +104,8 @@ export const chartData = {
 			data: [30, 40, 45, 27, 49, 60],
 		},
 		{
-			label: 'metal',
-			name: 'metal',
+			label: 'Processing',
+			name: 'Processing',
 			data: [40, 45, 25, 30, 29, 60],
 		},
 		{
@@ -114,12 +114,132 @@ export const chartData = {
 			data: [30, 40, 45, 50, 49, 60],
 		},
 		{
-			name: 'oepe',
-			label: 'oepe',
+			name: 'manufacturing',
+			label: 'manufacturing',
 			data: [30, 50, 49, 40, 45, 60],
 		},
 	],
 };
+export const loans = [
+	{
+		id: 1,
+		type: 'Loan',
+		name: 'Crop Expansion Loan',
+		status: 'Available',
+		description:
+			'This loan is designed to help farmers expand their crop production.',
+		requirements: [
+			'Proof of land ownership or lease agreement',
+			'Detailed crop expansion plan',
+			'Credit history check',
+			'Collateral or guarantor',
+		],
+		interestRate: '7.5% per annum',
+		loanAmount: 'Up to $10,000',
+		repaymentTerms: '12 - 36 months',
+		applicationProcess:
+			'To apply, farmers need to fill out an application form available at the local agricultural office. Expected processing time is 2-4 weeks.',
+	},
+	{
+		id: 2,
+		type: 'Loan',
+		name: 'Irrigation Equipment Loan',
+		status: 'Available',
+		description:
+			'Farmers can access funds to purchase irrigation equipment for efficient water management.',
+		requirements: [
+			'Purchase order or quotation for equipment',
+			'Business registration documents',
+			'Proof of income',
+		],
+		interestRate: '6.0% per annum',
+		loanAmount: 'Up to $5,000',
+		repaymentTerms: '6 - 24 months',
+		applicationProcess:
+			'Farmers need to submit a loan application along with quotations for the required equipment. Approval typically takes 1-2 weeks.',
+	},
+	{
+		id: 3,
+		type: 'Grant',
+		name: 'Farm Equipment Grants',
+		status: 'Available',
+		description:
+			'These grants provide funding to farmers for the purchase of essential equipment.',
+		requirements: [
+			'Detailed equipment list',
+			'Quotations for equipment purchase',
+		],
+		grantAmount: '$1,000 - $10,000',
+		applicationProcess:
+			'Farmers must submit a grant application along with equipment purchase details. Approval process usually takes 4-6 weeks.',
+	},
+	{
+		id: 4,
+		type: 'Grant',
+		name: 'Farm Grants for Female Farmers',
+		status: 'Available',
+		description:
+			'These grants are specifically designed to support female farmers in Africa.',
+		requirements: [
+			'Proof of female farmer status',
+			'Project proposal outlining farming activities',
+		],
+		grantAmount: '$500 - $5,000',
+		applicationProcess:
+			'Female farmers can apply by submitting a grant application form along with required documents. Processing time is approximately 4-6 weeks.',
+	},
+	{
+		id: 5,
+		type: 'Grant',
+		name: 'Funding for Agricultural Projects in Africa',
+		status: 'Available',
+		description:
+			'This funding supports various agricultural projects aimed at improving food security and livelihoods in Africa.',
+		requirements: [
+			'Detailed project proposal',
+			'Budget breakdown',
+			'Proof of community involvement',
+		],
+		grantAmount: 'Varies',
+		applicationProcess:
+			'Organizations can apply by submitting a project proposal to the funding organization. Application deadlines are announced periodically.',
+	},
+	{
+		id: 6,
+		type: 'Loan',
+		name: 'International Agricultural Loans',
+		status: 'Available',
+		description:
+			'These loans are available for agricultural projects with an international focus.',
+		requirements: [
+			'International business plan',
+			'Market analysis',
+			'Financial projections',
+		],
+		interestRate: '6.5% per annum',
+		loanAmount: 'Up to $100,000',
+		repaymentTerms: '24 - 60 months',
+		applicationProcess:
+			'Applicants need to submit a loan application along with detailed project documentation. Approval process may vary.',
+	},
+	{
+		id: 7,
+		type: 'Grant',
+		name: 'Youth Empowerment in Agricultural Program',
+		status: 'Available',
+		description:
+			'This grant aims to empower youth in agriculture by providing funding for training, resources, and startup capital.',
+		requirements: [
+			'Proof of age (youth status)',
+			'Proposal outlining agricultural project or business idea',
+			'Plan for community impact',
+		],
+		grantAmount: '$1,000 - $10,000',
+		applicationProcess:
+			'Youth interested in agriculture can apply by submitting a grant application form along with their project proposal. Processing time is approximately 4-6 weeks.',
+	},
+];
+
 export const locations = [
 	{
 		id: 0,

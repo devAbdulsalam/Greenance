@@ -1,12 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaCoins } from 'react-icons/fa';
-import { BsChatTextFill } from 'react-icons/bs';
 import { FiBell } from 'react-icons/fi';
-import { MdOutlineOndemandVideo } from 'react-icons/md';
 import { BiLogOutCircle } from 'react-icons/bi';
-import { TbPhotoScan } from 'react-icons/tb';
 import { IoStatsChartOutline } from 'react-icons/io5';
 import { MdOutlineLocalShipping } from 'react-icons/md';
 
@@ -22,7 +18,7 @@ const Nav = ({ sideBar }) => {
 		<>
 			<nav className="flex flex-col mx-4 my-6 space-y-4 z-10">
 				<NavLink
-					to={'/'}
+					to={'/dashboard'}
 					onClick={() => handleNav(0)}
 					className={`${
 						nav == 0
@@ -65,52 +61,7 @@ const Nav = ({ sideBar }) => {
 					)}
 				</NavLink>
 				<NavLink
-					to={'/wallet'}
-					onClick={() => handleNav(1)}
-					className={`${
-						nav == 1
-							? 'bg-primary hover:bg-primary-light text-white'
-							: 'text-primary bg-slate-100 hover:bg-primary hover:text-white'
-					} group rounded-md relative text-lg font-medium inline-flex items-center w-full transition-colors ease-in-out duration-300 px-5 py-[9px] my-2`}
-				>
-					<span
-						className={`inline-block text-xl mt-1 ${
-							sideBar ? 'mr-[10px]' : ''
-						} `}
-					>
-						<FaCoins className="h-6 w-6 -translate-y-[4px]" />
-					</span>
-					{sideBar ? (
-						<span className="font-bold">Rewards</span>
-					) : (
-						<span className="sr-only">Rewards</span>
-					)}
-				</NavLink>
-
-				<NavLink
-					to={'/scan'}
-					onClick={() => handleNav(4)}
-					className={`${
-						nav == 4
-							? 'bg-primary hover:bg-primary-light text-white'
-							: 'text-primary bg-slate-100 hover:bg-primary hover:text-white'
-					} group rounded-md relative text-lg font-medium inline-flex items-center w-full transition-colors ease-in-out duration-300 px-5 py-[9px] my-2`}
-				>
-					<span
-						className={`inline-block text-xl mt-1 ${
-							sideBar ? 'mr-[10px]' : ''
-						} `}
-					>
-						<TbPhotoScan className="h-6 w-6 -translate-y-[4px]" />
-					</span>
-					{sideBar ? (
-						<span className="font-bold">Scan</span>
-					) : (
-						<span className="sr-only">Scan</span>
-					)}
-				</NavLink>
-				<NavLink
-					to={'/location'}
+					to={'/dashboard'}
 					onClick={() => handleNav(20)}
 					className={`${
 						nav == 20
@@ -129,28 +80,6 @@ const Nav = ({ sideBar }) => {
 						<span className="font-bold">Locate Agents</span>
 					) : (
 						<span className="sr-only">Locate Agents</span>
-					)}
-				</NavLink>
-				<NavLink
-					to={'/chat'}
-					onClick={() => handleNav(5)}
-					className={`${
-						nav == 5
-							? 'bg-primary hover:bg-primary-light text-white'
-							: 'text-primary bg-slate-100 hover:bg-primary hover:text-white'
-					} group rounded-md relative text-lg font-medium inline-flex items-center w-full transition-colors ease-in-out duration-300 px-5 py-[9px] my-2`}
-				>
-					<span
-						className={`inline-block text-xl mt-1 ${
-							sideBar ? 'mr-[10px]' : ''
-						} `}
-					>
-						<BsChatTextFill className="h-6 w-6 -translate-y-[4px]" />
-					</span>
-					{sideBar ? (
-						<span className="font-bold">Messages</span>
-					) : (
-						<span className="sr-only">Messages</span>
 					)}
 				</NavLink>
 				<NavLink
@@ -198,29 +127,7 @@ const Nav = ({ sideBar }) => {
 					)}
 				</NavLink>
 				<NavLink
-					to={'/videos'}
-					onClick={() => handleNav(3)}
-					className={`${
-						nav == 3
-							? 'bg-primary hover:bg-primary-light text-white'
-							: 'text-primary bg-slate-100 hover:bg-primary hover:text-white'
-					} group rounded-md relative text-lg font-medium inline-flex items-center w-full transition-colors ease-in-out duration-300 px-5 py-[9px] my-2`}
-				>
-					<span
-						className={`inline-block text-xl mt-1 ${
-							sideBar ? 'mr-[10px]' : ''
-						} `}
-					>
-						<MdOutlineOndemandVideo className="h-6 w-6 -translate-y-[4px]" />
-					</span>
-					{sideBar ? (
-						<span className="font-bold">How to</span>
-					) : (
-						<span className="sr-only">Video</span>
-					)}
-				</NavLink>
-				<NavLink
-					to={'/notifications'}
+					to={'/dashboard'}
 					onClick={() => handleNav(7)}
 					className={`${
 						nav == 7
@@ -243,42 +150,6 @@ const Nav = ({ sideBar }) => {
 				</NavLink>
 			</nav>
 			<div className="inline-flex flex-col items-center justify-center h-fit w-full border-gray-600 border-t-2 px-4">
-				<NavLink
-					to={'/settings'}
-					onClick={() => handleNav(12)}
-					className={`${
-						nav == 12
-							? 'bg-primary hover:bg-primary-light text-white'
-							: 'text-primary bg-slate-100 hover:bg-primary hover:text-white'
-					} group rounded-md relative text-lg font-medium inline-flex items-center w-full transition-colors ease-in-out duration-300 px-5 py-[9px] my-2`}
-				>
-					<span className="sr-only">Settings</span>
-					<svg
-						aria-hidden="true"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke="currentColor"
-						className="h-6 w-6"
-					>
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							strokeWidth="2"
-							d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-						/>
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							strokeWidth="2"
-							d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-						/>
-					</svg>
-					{sideBar ? (
-						<span className="font-bold">Settings</span>
-					) : (
-						<span className="sr-only">Settings</span>
-					)}
-				</NavLink>
 				<Logout>
 					<span
 						to={'/'}

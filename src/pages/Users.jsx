@@ -14,7 +14,7 @@ const Users = () => {
 	const [users, setUsers] = useState([]);
 	const [globalFilter, setGlobalFilter] = useState('');
 	const [loading, setLoading] = useState(false);
-	const prop = { token: user?.token, id: user.user._id };
+	const prop = { token: user?.token, id: user?.user?._id };
 	let { data, isLoading, error } = useQuery(['user'], async () =>
 		fetchUsers(prop)
 	);

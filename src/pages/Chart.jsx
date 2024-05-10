@@ -13,7 +13,7 @@ const Dashboard = () => {
 	const { user } = useContext(AuthContext);
 	const [wallet, setWallet] = useState(0);
 	const [loading, setLoading] = useState(false);
-	const prop = { token: user?.token, id: user.user._id };
+	const prop = { token: user?.token, id: user?.user?._id };
 	const { data, isLoading, error } = useQuery(['wallet'], async () =>
 		fetchChart(prop)
 	);
@@ -36,14 +36,14 @@ const Dashboard = () => {
 						<h2 className="text-gray-600 ml-0.5">Carbon Footprint stat</h2>
 					</div>
 				</div>
-				<WalletCard wallet={wallet} setLoading={setLoading} />
+				<WalletCard data={wallet}  />
 				<section className="grid md:grid-cols-2 xl:grid-cols-4 xl:grid-rows-3 xl:grid-flow-col gap-6">
 					<WasteList />
 					<Chart />
 					<WastePerMonth />
 				</section>
 			</main>
-			{isLoading || loading ? <Loader /> : ''}
+			{/* {isLoading || loading ? <Loader /> : ''} */}
 		</>
 	);
 };

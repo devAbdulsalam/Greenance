@@ -21,7 +21,7 @@ const Main = () => {
 					</div>
 					<div>
 						<span className="block text-2xl font-bold">62</span>
-						<span className="block text-gray-500">Students</span>
+						<span className="block text-gray-500">Farmers</span>
 					</div>
 				</div>
 				<div className="flex items-center p-8 bg-white shadow rounded-lg">
@@ -43,7 +43,7 @@ const Main = () => {
 					</div>
 					<div>
 						<span className="block text-2xl font-bold">6.8</span>
-						<span className="block text-gray-500">Average mark</span>
+						<span className="block text-gray-500">Average Loan</span>
 					</div>
 				</div>
 				<div className="flex items-center p-8 bg-white shadow rounded-lg">
@@ -69,7 +69,7 @@ const Main = () => {
 							(14%)
 						</span>
 						<span className="block text-gray-500">
-							Underperforming students
+							Distributed Loans
 						</span>
 					</div>
 				</div>
@@ -92,14 +92,14 @@ const Main = () => {
 					</div>
 					<div>
 						<span className="block text-2xl font-bold">83%</span>
-						<span className="block text-gray-500">Finished homeworks</span>
+						<span className="block text-gray-500">Available loans</span>
 					</div>
 				</div>
 			</section>
-			<section className="grid md:grid-cols-2 xl:grid-cols-4 xl:grid-rows-3 xl:grid-flow-col gap-6">
+			<section className="grid md:grid-cols-2 xl:grid-cols-4 xl:grid-rows-3 xl:grid-flow-col gap-6 mt-5">
 				<div className="flex flex-col md:col-span-2 md:row-span-2 bg-white shadow rounded-lg">
 					<div className="px-6 py-5 font-semibold border-b border-gray-100">
-						The number of applied and left students per month
+						The number of avail loans per month
 					</div>
 					<div className="p-4 flex-grow">
 						<div className="flex items-center justify-center h-full px-4 py-16 text-gray-400 text-3xl font-semibold bg-gray-100 border-2 border-gray-200 border-dashed rounded-md">
@@ -158,7 +158,7 @@ const Main = () => {
 				</div>
 				<div className="row-span-3 bg-white shadow rounded-lg">
 					<div className="flex items-center justify-between px-6 py-5 font-semibold border-b border-gray-100">
-						<span>Students by average mark</span>
+						<span>New availabe loans</span>
 						<button
 							type="button"
 							className="inline-flex justify-center rounded-md px-1 -mr-1 bg-white text-sm leading-5 font-medium text-gray-500 hover:text-gray-600"
@@ -269,7 +269,7 @@ const Main = () => {
 				</div>
 				<div className="flex flex-col row-span-3 bg-white shadow rounded-lg">
 					<div className="px-6 py-5 font-semibold border-b border-gray-100">
-						Students by type of studying
+						Farmers by type of products
 					</div>
 					<div className="p-4 flex-grow">
 						<div className="flex items-center justify-center h-full px-4 py-24 text-gray-400 text-3xl font-semibold bg-gray-100 border-2 border-gray-200 border-dashed rounded-md">
