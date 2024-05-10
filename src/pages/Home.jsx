@@ -232,14 +232,12 @@ const Home = () => {
 					</div>
 					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-10">
 						{sdgGoals.map((item, idx) => (
-							<div key={idx} className="text-center">
-								<div>
-									<img
-										src={item.image}
-										alt={item.image}
-										className="h-[120px] mx-auto rounded-sm"
-									/>
-								</div>
+							<div key={idx} className="text-center w-full">
+								<img
+									src={item.image}
+									alt={item.image}
+									className="h-[120px] mx-auto rounded-sm w-10/12 sm:w-full"
+								/>
 								<h3 className="text-lg md:text-xl font-semibold my-2">
 									{item.title}
 								</h3>

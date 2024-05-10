@@ -32,7 +32,7 @@ const Teams = () => {
 	}, []);
 	return (
 		<section id="team">
-			<div className="container mx-auto my-10">
+			<div className="md:container mx-auto my-10">
 				<div className="text-center">
 					<motion.h2
 						initial={{ opacity: 0, y: 50 }}
