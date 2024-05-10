@@ -1,5 +1,5 @@
 const Main = () => {
-  return (
+	return (
 		<div>
 			<section className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
 				<div className="flex items-center p-8 bg-white shadow rounded-lg">
@@ -68,9 +68,7 @@ const Main = () => {
 						<span className="inline-block text-xl text-gray-500 font-semibold">
 							(14%)
 						</span>
-						<span className="block text-gray-500">
-							Distributed Loans
-						</span>
+						<span className="block text-gray-500">Distributed Loans</span>
 					</div>
 				</div>
 				<div className="flex items-center p-8 bg-white shadow rounded-lg">
@@ -153,7 +151,7 @@ const Main = () => {
 					</div>
 					<div>
 						<span className="block text-2xl font-bold">139</span>
-						<span className="block text-gray-500">Hours spent on lections</span>
+						<span className="block text-gray-500">Grants</span>
 					</div>
 				</div>
 				<div className="row-span-3 bg-white shadow rounded-lg">
@@ -280,6 +278,6 @@ const Main = () => {
 			</section>
 		</div>
 	);
-}
+};
 
-export default Main
+export default Main;
