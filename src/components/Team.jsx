@@ -2,15 +2,17 @@
 const Team = ({ name, role, image, text, link }) => {
 	return (
 		<div className="group relative cursor-pointer md:my-10 overflow-hidden bg-white px-6 my-3 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
-			<span className="absolute top-10 right-32 z-10 group-hover:z-40 group-hover:text-white h-20 w-20 rounded-full bg-primary transition-all duration-500 group-hover:scale-[10]"></span>
+			<span className="absolute top-10 right-32 z-10 group-hover:z-40 group-hover:text-white h-20 w-20 rounded-full bg-primary group-hover:bg-green-500 transition-all duration-500 group-hover:scale-[10]"></span>
 			<div className="w-full h-full  z-50 hidden group-hover:flex justify-center items-center group-hover:absolute top-0 right-0   group-hover:text-white border-gray">
 				<div>
-					<p className="text text-sm p-5">&quot;{text}&quot; </p>
+					<p className="text text-sm p-5 group-hover:text-white">
+						&quot;{text}&quot;{' '}
+					</p>
 					<p className="">
 						<a
 							href={link || '#'}
 							target="blank"
-							className=" mt-2 text-xl font-bold text-center block"
+							className=" mt-2 text-xl font-bold text-center block group-hover:text-white"
 						>
 							{name}
 						</a>

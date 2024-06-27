@@ -6,6 +6,7 @@ import image6 from './../assets/image1.jpg';
 import { moreInfo, sdgGoals } from './../Data.js';
 import Footer from './../components/Footer';
 import Teams from './../components/Teams';
+import FAQ from './../components/FAQ';
 import { motion } from 'framer-motion';
 
 const Home = () => {
@@ -190,14 +191,7 @@ const Home = () => {
 							</motion.div>
 						))}
 					</div>
-					<div className="flex justify-center mt-10">
-						<Link
-							to="/loans"
-							className="bg-primary-light hover:bg-primary text-white px-4 py-3 rounded-lg"
-						>
-							See available loans
-						</Link>
-					</div>
+					
 				</div>
 			</section>
 			<section className="information bg-slate-50 pt-10 pb-16 flex justify-center items-center">
@@ -247,6 +241,7 @@ const Home = () => {
 				</div>
 			</section>
 			<Teams />
+			<FAQ />
 			<Footer />
 		</>
 	);

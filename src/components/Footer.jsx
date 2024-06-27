@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<footer id="contact">
+		<footer id="contactUs">
 			<div className="border-t border-slate-200 py-4 text-gray-600 mt-10">
 				<div className="container px-4 mx-auto">
 					<div className="-mx-4 flex flex-wrap justify-between">
@@ -10,18 +10,45 @@ const Footer = () => {
 									Greenance
 								</h2>
 							</a>
+							<ul className="leading-8">
+								<li>
+									<a href="#why-greenance" className="hover:text-primary-dark">
+										Why Greenance
+									</a>
+								</li>
+								<li>
+									<a href="#services" className="hover:text-primary-dark">
+										Services
+									</a>
+								</li>
+								<li>
+									<a href="#sdgs" className="hover:text-primary-dark">
+										SDG Goals
+									</a>
+								</li>
+								<li>
+									<a href="#gallery" className="hover:text-primary-dark">
+										Galley
+									</a>
+								</li>
+							</ul>
 						</div>
 
 						<div className="px-4 my-4 w-full sm:w-auto">
-							<div>
+							<a href="#aboutus">
 								<h2 className="inline-block text-xl pb-4 mb-2 border-b-4 text-primary border-primary-dark">
 									About us
 								</h2>
-							</div>
+							</a>
 							<ul className="leading-8">
 								<li>
-									<a href="#" className="hover:text-primary-dark">
-										About Us
+									<a href="#our-team" className="hover:text-primary-dark">
+										Our Team
+									</a>
+								</li>
+								<li>
+									<a href="#faq" className="hover:text-primary-dark">
+										Faq
 									</a>
 								</li>
 								<li>
@@ -106,7 +133,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			<div className="bg-primary py-4 text-gray-100">
+			<div className="bg-green-500 py-4 text-gray-100">
 				<div className="container mx-auto px-4">
 					<div className="-mx-4 flex flex-wrap justify-between">
 						<div className="px-4 w-full text-center sm:w-auto sm:text-left">

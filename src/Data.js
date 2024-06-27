@@ -120,6 +120,68 @@ export const chartData = {
 		},
 	],
 };
+export const faqData = [
+	{
+		question: 'What is Greenanace?',
+		answer:
+			'Providing farmers with information to investment funds, preventing farm loss from lack of funds.',
+	},
+	{
+		question: 'How do I apply for a loan?',
+		answer: 'Check for detailed application instructions.',
+	},
+	{
+		question: 'Who is eligible for a loan?',
+		answer:
+			'Farmers who meet our eligibility criteria, including land ownership and farming experience, can apply for a loan.',
+	},
+	{
+		question: 'What documents are required for the loan application?',
+		answer:
+			'Required documents typically include identification, proof of land ownership, and financial records.',
+	},
+	{
+		question: 'How long does it take to process a loan application?',
+		answer:
+			'Loan applications are typically processed within 2-4 weeks, depending on the completeness of the submitted documents.',
+	},
+	{
+		question: 'What are the interest rates for the loans?',
+		answer:
+			"Interest rates vary based on the type of loan and the applicant's creditworthiness. Please refer to our loan terms for specific rates.",
+	},
+	{
+		question: 'Can I repay my loan early?',
+		answer:
+			'Yes, you can repay your loan early without any penalties. Early repayment may also reduce the total interest paid.',
+	},
+	{
+		question: 'What happens if I miss a loan payment?',
+		answer:
+			'If you miss a payment, please contact us immediately. We offer flexible repayment options and can work with you to avoid penalties.',
+	},
+	{
+		question: 'Are there any fees associated with the loan application?',
+		answer:
+			'There may be a small processing fee for the loan application. Please refer to our fee schedule for details.',
+	},
+	{
+		question: 'How can I check the status of my loan application?',
+		answer:
+			'You can check the status of your loan application by logging into your account on our website or contacting our customer service.',
+	},
+	{
+		question: 'What types of loans does Greenanace offer?',
+		answer:
+			'Greenanace offers various types of loans including short-term, long-term, and microloans tailored to meet different farming needs.',
+	},
+	{
+		question: 'Can I use the loan for any farming-related expense?',
+		answer:
+			'Yes, the loan can be used for a variety of farming-related expenses such as purchasing equipment, seeds, fertilizers, and more.',
+	},
+];
+
 export const loans = [
 	{
 		id: 1,

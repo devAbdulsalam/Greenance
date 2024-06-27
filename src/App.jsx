@@ -7,7 +7,7 @@ import NotFound from './NotFound';
 import Layout from './Layout';
 import Register from './pages/Register';
 import DashboardLayout from './pages/DashboardLayout';
-import Home from './pages/Home';
+import Home from './pages/Index';
 import Dashboard from './pages/Dashboard';
 import Users from './pages/Users';
 import Chart from './pages/Chart';
