@@ -73,7 +73,7 @@ const Navbar = () => {
 				} md:flex md:w-auto px-2 py-2 md:rounded`}
 			>
 				<div className="flex justify-end">
-					<button className="flex items-center px-6 py-2.5 mr-3 rounded-full border-green-500 hover:bg-green-500 hover:text-white font-medium">
+					<button className="flex items-center px-6 py-2.5 mr-3 rounded-full bg-white border-green-500 hover:bg-green-500 hover:text-white font-medium">
 						Login
 					</button>
 					<button className="flex items-center px-6 py-2.5 rounded-full bg-green-500 hover:bg-green-400 text-white font-medium">
